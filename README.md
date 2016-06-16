@@ -12,7 +12,7 @@ $ npm install --save lasso-babel
 Install [Babel preset](https://babeljs.io/docs/plugins/) you need for your project
 
 ```
-npm install --save babel-preset-es2015
+$ npm install --save babel-preset-es2015
 ```
 
 ## Usage
