@@ -22,7 +22,8 @@ describe('lasso-babel', function() {
       plugins: [{
         plugin: plugin,
         config: {
-
+          ast: false,
+          "presets": []
         }
       }]
     });

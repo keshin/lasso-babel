@@ -1,8 +1,8 @@
 "use strict";
 var babel = require('babel-core');
 
-function compileFile(path, callback) {
-  babel.transformFile(path, function(error, result) {
+function compileFile(path, config, callback) {
+  babel.transformFile(path, config, function(error, result) {
     if (error) {
       callback(error);
     } else {
@@ -23,13 +23,13 @@ module.exports = function babelPlugin(lasso, config) {
         if (!this.path) {
           return callback(new Error('"path" is required'));
         }
-
+        console.log(config);
         // NOTE: resolvePath can be used to resolve a provided relative path to a full path
         this.path = this.resolvePath(this.path);
         callback();
       },
       read: function(context, callback) {
-        compileFile(this.path, callback);
+        compileFile(this.path, config, callback);
       },
       getSourceFile: function() {
         return this.path;
