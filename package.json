@@ -1,0 +1,29 @@
+{
+  "name": "lasso-babel",
+  "version": "1.0.0",
+  "description": "Lasso.js plugin to transform your JavaScript with babel",
+  "main": "lasso-babel-plugin.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha --ui bdd --reporter spec ./test && node_modules/.bin/jshint *.js"
+  },
+  "keywords": [
+    "lasso",
+    "lasso-plugin",
+    "babel",
+    "ES2015"
+  ],
+  "author": "keshin",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "chai": "^3.5.0",
+    "jshint": "^2.9.2",
+    "lasso": "^2.5.2",
+    "mocha": "^2.5.3"
+  },
+  "dependencies": {
+    "babel-core": "^6.9.1",
+    "raptor-logging": "^1.1.2",
+    "raptor-util": "^1.0.10"
+  }
+}
