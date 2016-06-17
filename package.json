@@ -1,6 +1,6 @@
 {
   "name": "lasso-babel",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Lasso.js plugin to transform your JavaScript with babel",
   "main": "lasso-babel-plugin.js",
   "scripts": {
