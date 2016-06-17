@@ -1,6 +1,9 @@
 lasso-babel
 ==============
 
+[![Build Status](https://api.travis-ci.org/keshin/lasso-babel.svg?branch=master)](https://travis-ci.org/keshin/lasso-babel)
+
+
 This Node.js module is a plugin for the [Lasso.js](https://github.com/lasso-js/lasso), that provides support to compile JavaScript with [Babel](https://babeljs.io/).
 
 ## Install
