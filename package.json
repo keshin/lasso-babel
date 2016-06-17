@@ -4,7 +4,7 @@
   "description": "Lasso.js plugin to transform your JavaScript with babel",
   "main": "lasso-babel-plugin.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha --ui bdd --reporter spec ./test && node_modules/.bin/jshint *.js"
+    "test": "node_modules/.bin/mocha --timeout 15000 --ui bdd --reporter spec ./test && node_modules/.bin/jshint *.js"
   },
   "keywords": [
     "lasso",
