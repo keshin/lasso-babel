@@ -23,7 +23,6 @@ module.exports = function babelPlugin(lasso, config) {
         if (!this.path) {
           return callback(new Error('"path" is required'));
         }
-        console.log(config);
         // NOTE: resolvePath can be used to resolve a provided relative path to a full path
         this.path = this.resolvePath(this.path);
         callback();
